@@ -17,6 +17,7 @@ MONGO_URI=tu_conexion_mongodb
 PORT=5000
 
 📌 Configuración de MongoDB Atlas
+
 🔹Si el profesor ya tiene MongoDB Atlas
 Solo debe agregar su MONGO_URI en el archivo .env.
 

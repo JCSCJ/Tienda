@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background: white;
+   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+header{
+    background: rgb(250, 250, 252);
+    padding: 0px 0;
+    text-align: center;
+}
+.main-bar, .secondary-bar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+.main-bar a , .secondary-bar a{
+    text-decoration: none;
+    color: #323232;
+    font-size: 13px;
+    padding:10px;
+    transition: color 0.3s;
+}
+.main-bar a:hover , .secondary-bar a:hover{
+    color: black;
+    }
+.filter {
+    text-align: center;
+    margin: 20px 0;
+}
+.filter select {
+    padding: 0px;
+    font-size: 13px;
+    border: 1px solid #f5f5f7;
+    border-radius: 10px;
+}
+#productContainer {
+    background: #f5f5f7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-height: 400px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    width: auto;
+    max-width: 100%;
+    height: 160px;
+    max-height: 160px;
+    object-fit: contain;
+    display: block;
+    margin: auto;}
+
+.card h3 {
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.card .Buy {
+    background: #0071e3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 980px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
+
+.card .Buy:hover {
+    background: #005bb5;
+}
+
+footer {
+    background: #f5f5f7;
+    color: #323232;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

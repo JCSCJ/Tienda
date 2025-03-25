@@ -43,11 +43,11 @@ npm start
 
 Obtener todos los productos: GET http://localhost:5000/api/products
 
-Obtener un producto por ID: GET http://localhost:5000/api/products/:id
+Obtener un producto por ID: GET http://localhost:5000/api/products/id
 
 Agregar un nuevo producto: POST http://localhost:5000/api/products
 
-Actualizar un producto por ID: PUT http://localhost:5000/api/products/:id
+Actualizar un producto por ID: PUT http://localhost:5000/api/products/id
 
 Body (JSON):
 {

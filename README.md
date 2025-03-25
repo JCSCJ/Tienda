@@ -1,6 +1,6 @@
 Hola profesor, en este proceso estoy intentando realizar un sistema 
 de gestion de productos,hasta este punto he hecho uso de MongoDB, 
-Express, Node.js y React.
+Express y Node.js.
 
 Instalacion:
 

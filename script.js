@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     } catch (error) {
         console.error("Error:", error.message);
-        productContainer.innerHTML = "<p>❌ Error al cargar los productos.</p>";
+        productContainer.innerHTML = "<p>Error al cargar los productos.</p>";
     }
 });

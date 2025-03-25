@@ -12,7 +12,7 @@ cd Tienda
 npm install
 
 3️⃣Configurar variables de entorno:
-Crea un archivo .env en la raíz del proyecto y agrega:
+El archivo .env ya está en el proyecto, solo debe modificarlo con sus propios datos:
 MONGO_URI=tu_conexion_mongodb
 PORT=5000
 

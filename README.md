@@ -33,15 +33,36 @@ Ir a "Network Access" y permitir conexiones desde 0.0.0.0/0 (o su IP).
 
 Copiar la cadena de conexión en Database > Connect > Drivers y usarla en MONGO_URI.
 
-4️⃣Poblar la base de datos con productos:
-node seed.js
+4️⃣ Poblar la base de datos con productos automáticamente:
+Los productos se insertan automáticamente al iniciar el servidor si la base de datos está vacía.
 
 5️⃣iniciar el servidor:
 npm start
 
-6️⃣Se puede probar la API:
-http://localhost:5000/api/products
+6️⃣ Probar la API:
 
-🙏 Disculpa: Actualmente el proyecto, solo cuenta con las operaciones GET y POST. 
+Obtener todos los productos: GET http://localhost:5000/api/products
 
-Contaba con grupo para realizar la actividad pero esta semana no enviaron ningun mensaje sobre la tarea 😞
+Obtener un producto por ID: GET http://localhost:5000/api/products/:id
+
+Agregar un nuevo producto: POST http://localhost:5000/api/products
+
+Actualizar un producto por ID: PUT http://localhost:5000/api/products/:id
+
+Body (JSON):
+{
+        "_id": "67e30afcc21d84407d24c30b",
+        "name": "Apple TV 4K",
+        "price": 699,
+        "image": "https://www.apple.com/co/buy/images/products/tv/apple_4k_wifi__fpjm9mmlrzyy_large.jpg",
+        "stock": 8,
+        "__v": 0
+}
+
+Eliminar un producto por ID: DELETE http://localhost:5000/api/products/:id
+
+
+🙏 Nota: Ahora el proyecto cuenta con operaciones GET, POST, PUT y DELETE para la gestión de productos.
+
+
+📌 Situación del grupo: Contaba con un grupo para realizar la actividad, pero no volvieron a enviar ningun mensaje. 😞
